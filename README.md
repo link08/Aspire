@@ -38,6 +38,8 @@ It is a simple REST API's for the private loan application. Authenticated users 
 
 <p><pre>$ php artisan migrate:fresh --seed</pre></p>
 
+<p><pre>$ php artisan key:generate</pre></p>
+
 <hr></hr>
 
 <p><em><strong>In this demo, Have used laravel-passport package, which should install before start</strong></em></p>
