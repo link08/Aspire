@@ -1,0 +1,478 @@
+{
+	"info": {
+		"_postman_id": "7d09bdb6-ff95-4db4-9bb0-a9eef72c992a",
+		"name": "Aspire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "lorenza53@example.net",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "aspire@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host}}/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "lorenza53@example.net",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "aspire@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jun 2021 19:33:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1084"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjJjZDY5ZDhkZTRhYTJkYjQzY2JjYTQ5Y2U2Y2IwMzI3NmRiOTU1NjA0MmVhNWMxNDY1ODdkNWY2MzJhOTliZmZjZjIyMGFjZmU2ODIwNzciLCJpYXQiOjE2MjI4MzUxOTQuNTEzODczLCJuYmYiOjE2MjI4MzUxOTQuNTEzODc4LCJleHAiOjE2NTQzNzExOTQuNDk4NzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.cHFLx4HTL7xw9qDMj15BZvHI2lwzesTtjls8rqcOAaUJbXEfuH0wzhA3YIfVYUKXQeAqrOv1eu6IQn-u1NICcRsRuoC3Q5qprIThtogNFvWRhU5Ab2P_S9ktsIVjUUixtD53NU2QYYiaOZ13xufBuR0wCPNXMVh6f-lsgUUqc3jXJchyMwSTUUTyQ9ii8qPxL0hs9UNfYSgYEIDXcs32l2ZutESEHw5vp6WW7cHsQ5j9mWSwaPqTSVNgNHjMHqPRFEivL7O__yCbxAK9i0Z4hd4u2rDTwPGLaY88gUf8GMLDFj41USPrbwyVvLMq1nL0QX1Gd2hL7nqIIEAyun8uZcz3UEggEhR0Ee97OBUlEK05lfx-VoN_4vjv_VxRtXaG25L9Iebgy1btnWOUDj8uZrPCukklwO4L3wKYQOZU24xiImllPOvPWV6HvdjsKEPf90fEaqiU4M-ofKltLOLqk76D4sAS42mUJJGuapr2xJ4zOz83AJ45eFWLEBIP8WLvKWGq5VlH_C9MdNjBKBVOZTYBemwwtFr2wczVYds7W7f6Sum_hg6dFZotDwANMbiHZ8iQN3x0YUYY42k86oBhrKu_UxJc9vJ2B5XLO5YoHMDNpsFB0BPKVbxexO3bGbDRjni9CyjFfgm_FKLpfjZpW1m1R3zJ0QsI2w-j77ZxI1A\",\n        \"name\": \"Mr. Thaddeus Swift DDS\"\n    },\n    \"message\": \"User login successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Request New Loan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/loans",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"loans"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Request New Loan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjJjZDY5ZDhkZTRhYTJkYjQzY2JjYTQ5Y2U2Y2IwMzI3NmRiOTU1NjA0MmVhNWMxNDY1ODdkNWY2MzJhOTliZmZjZjIyMGFjZmU2ODIwNzciLCJpYXQiOjE2MjI4MzUxOTQuNTEzODczLCJuYmYiOjE2MjI4MzUxOTQuNTEzODc4LCJleHAiOjE2NTQzNzExOTQuNDk4NzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.cHFLx4HTL7xw9qDMj15BZvHI2lwzesTtjls8rqcOAaUJbXEfuH0wzhA3YIfVYUKXQeAqrOv1eu6IQn-u1NICcRsRuoC3Q5qprIThtogNFvWRhU5Ab2P_S9ktsIVjUUixtD53NU2QYYiaOZ13xufBuR0wCPNXMVh6f-lsgUUqc3jXJchyMwSTUUTyQ9ii8qPxL0hs9UNfYSgYEIDXcs32l2ZutESEHw5vp6WW7cHsQ5j9mWSwaPqTSVNgNHjMHqPRFEivL7O__yCbxAK9i0Z4hd4u2rDTwPGLaY88gUf8GMLDFj41USPrbwyVvLMq1nL0QX1Gd2hL7nqIIEAyun8uZcz3UEggEhR0Ee97OBUlEK05lfx-VoN_4vjv_VxRtXaG25L9Iebgy1btnWOUDj8uZrPCukklwO4L3wKYQOZU24xiImllPOvPWV6HvdjsKEPf90fEaqiU4M-ofKltLOLqk76D4sAS42mUJJGuapr2xJ4zOz83AJ45eFWLEBIP8WLvKWGq5VlH_C9MdNjBKBVOZTYBemwwtFr2wczVYds7W7f6Sum_hg6dFZotDwANMbiHZ8iQN3x0YUYY42k86oBhrKu_UxJc9vJ2B5XLO5YoHMDNpsFB0BPKVbxexO3bGbDRjni9CyjFfgm_FKLpfjZpW1m1R3zJ0QsI2w-j77ZxI1A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_amount",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "loan_term",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/loans",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"loans"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jun 2021 20:14:59 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "234"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"loan_amount\": \"10000\",\n        \"loan_term\": \"5\",\n        \"status\": 1,\n        \"approval_status\": 1,\n        \"modified_by\": 0,\n        \"created_at\": \"04-06-2021\",\n        \"updated_at\": \"04-06-2021\"\n    },\n    \"message\": \"Loan request has been sent successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Repayment Loan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjJjZDY5ZDhkZTRhYTJkYjQzY2JjYTQ5Y2U2Y2IwMzI3NmRiOTU1NjA0MmVhNWMxNDY1ODdkNWY2MzJhOTliZmZjZjIyMGFjZmU2ODIwNzciLCJpYXQiOjE2MjI4MzUxOTQuNTEzODczLCJuYmYiOjE2MjI4MzUxOTQuNTEzODc4LCJleHAiOjE2NTQzNzExOTQuNDk4NzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.cHFLx4HTL7xw9qDMj15BZvHI2lwzesTtjls8rqcOAaUJbXEfuH0wzhA3YIfVYUKXQeAqrOv1eu6IQn-u1NICcRsRuoC3Q5qprIThtogNFvWRhU5Ab2P_S9ktsIVjUUixtD53NU2QYYiaOZ13xufBuR0wCPNXMVh6f-lsgUUqc3jXJchyMwSTUUTyQ9ii8qPxL0hs9UNfYSgYEIDXcs32l2ZutESEHw5vp6WW7cHsQ5j9mWSwaPqTSVNgNHjMHqPRFEivL7O__yCbxAK9i0Z4hd4u2rDTwPGLaY88gUf8GMLDFj41USPrbwyVvLMq1nL0QX1Gd2hL7nqIIEAyun8uZcz3UEggEhR0Ee97OBUlEK05lfx-VoN_4vjv_VxRtXaG25L9Iebgy1btnWOUDj8uZrPCukklwO4L3wKYQOZU24xiImllPOvPWV6HvdjsKEPf90fEaqiU4M-ofKltLOLqk76D4sAS42mUJJGuapr2xJ4zOz83AJ45eFWLEBIP8WLvKWGq5VlH_C9MdNjBKBVOZTYBemwwtFr2wczVYds7W7f6Sum_hg6dFZotDwANMbiHZ8iQN3x0YUYY42k86oBhrKu_UxJc9vJ2B5XLO5YoHMDNpsFB0BPKVbxexO3bGbDRjni9CyjFfgm_FKLpfjZpW1m1R3zJ0QsI2w-j77ZxI1A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{host}}/loan-repayment",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"loan-repayment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Repayment Loan - Failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjJjZDY5ZDhkZTRhYTJkYjQzY2JjYTQ5Y2U2Y2IwMzI3NmRiOTU1NjA0MmVhNWMxNDY1ODdkNWY2MzJhOTliZmZjZjIyMGFjZmU2ODIwNzciLCJpYXQiOjE2MjI4MzUxOTQuNTEzODczLCJuYmYiOjE2MjI4MzUxOTQuNTEzODc4LCJleHAiOjE2NTQzNzExOTQuNDk4NzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.cHFLx4HTL7xw9qDMj15BZvHI2lwzesTtjls8rqcOAaUJbXEfuH0wzhA3YIfVYUKXQeAqrOv1eu6IQn-u1NICcRsRuoC3Q5qprIThtogNFvWRhU5Ab2P_S9ktsIVjUUixtD53NU2QYYiaOZ13xufBuR0wCPNXMVh6f-lsgUUqc3jXJchyMwSTUUTyQ9ii8qPxL0hs9UNfYSgYEIDXcs32l2ZutESEHw5vp6WW7cHsQ5j9mWSwaPqTSVNgNHjMHqPRFEivL7O__yCbxAK9i0Z4hd4u2rDTwPGLaY88gUf8GMLDFj41USPrbwyVvLMq1nL0QX1Gd2hL7nqIIEAyun8uZcz3UEggEhR0Ee97OBUlEK05lfx-VoN_4vjv_VxRtXaG25L9Iebgy1btnWOUDj8uZrPCukklwO4L3wKYQOZU24xiImllPOvPWV6HvdjsKEPf90fEaqiU4M-ofKltLOLqk76D4sAS42mUJJGuapr2xJ4zOz83AJ45eFWLEBIP8WLvKWGq5VlH_C9MdNjBKBVOZTYBemwwtFr2wczVYds7W7f6Sum_hg6dFZotDwANMbiHZ8iQN3x0YUYY42k86oBhrKu_UxJc9vJ2B5XLO5YoHMDNpsFB0BPKVbxexO3bGbDRjni9CyjFfgm_FKLpfjZpW1m1R3zJ0QsI2w-j77ZxI1A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "repay_amount",
+									"value": "20000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/loan-repayment",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"loan-repayment"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jun 2021 20:41:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "132"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Repayment Warning.\",\n    \"data\": \"Your repayment amount doesn't match with approved repayment amount (2000).\"\n}"
+				},
+				{
+					"name": "Repayment Loan - Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjJjZDY5ZDhkZTRhYTJkYjQzY2JjYTQ5Y2U2Y2IwMzI3NmRiOTU1NjA0MmVhNWMxNDY1ODdkNWY2MzJhOTliZmZjZjIyMGFjZmU2ODIwNzciLCJpYXQiOjE2MjI4MzUxOTQuNTEzODczLCJuYmYiOjE2MjI4MzUxOTQuNTEzODc4LCJleHAiOjE2NTQzNzExOTQuNDk4NzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.cHFLx4HTL7xw9qDMj15BZvHI2lwzesTtjls8rqcOAaUJbXEfuH0wzhA3YIfVYUKXQeAqrOv1eu6IQn-u1NICcRsRuoC3Q5qprIThtogNFvWRhU5Ab2P_S9ktsIVjUUixtD53NU2QYYiaOZ13xufBuR0wCPNXMVh6f-lsgUUqc3jXJchyMwSTUUTyQ9ii8qPxL0hs9UNfYSgYEIDXcs32l2ZutESEHw5vp6WW7cHsQ5j9mWSwaPqTSVNgNHjMHqPRFEivL7O__yCbxAK9i0Z4hd4u2rDTwPGLaY88gUf8GMLDFj41USPrbwyVvLMq1nL0QX1Gd2hL7nqIIEAyun8uZcz3UEggEhR0Ee97OBUlEK05lfx-VoN_4vjv_VxRtXaG25L9Iebgy1btnWOUDj8uZrPCukklwO4L3wKYQOZU24xiImllPOvPWV6HvdjsKEPf90fEaqiU4M-ofKltLOLqk76D4sAS42mUJJGuapr2xJ4zOz83AJ45eFWLEBIP8WLvKWGq5VlH_C9MdNjBKBVOZTYBemwwtFr2wczVYds7W7f6Sum_hg6dFZotDwANMbiHZ8iQN3x0YUYY42k86oBhrKu_UxJc9vJ2B5XLO5YoHMDNpsFB0BPKVbxexO3bGbDRjni9CyjFfgm_FKLpfjZpW1m1R3zJ0QsI2w-j77ZxI1A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "repay_amount",
+									"value": "2000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/loan-repayment",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"loan-repayment"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 04 Jun 2021 20:43:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/8.0.3"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": \"Repayment Success.\",\n    \"message\": \"Your payment has been successfully received.\"\n}"
+				}
+			]
+		}
+	]
+}
